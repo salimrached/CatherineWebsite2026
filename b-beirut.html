@@ -14,6 +14,151 @@
     <link rel="stylesheet" href="b-beirut.css" />
   </head>
   <body>
+    <section class="bb-section">
+      <div class="bb-title">
+        <h1>🇱🇧 B-Beirut</h1>
+      </div>
+      <div class="bb-grid">
+        <div
+          class="bb-card"
+          data-video="assets/b-beirut/01_January10_2013.mp4"
+          data-description="Description 01"
+        >
+          <div class="bb-card_thumbnail">
+            <img
+              src="assets/b-beirut/01_January10.jpg"
+              alt="B-Beirut January 10"
+            />
+            <div class="bb-card_play">&#9654;</div>
+          </div>
+          <div class="bb-card_info">
+            <h3>B-Beirut</h3>
+            <p>January 10, 2013</p>
+          </div>
+        </div>
+
+        <div
+          class="bb-card"
+          data-video="assets/b-beirut/02_January22_2013.mp4"
+          data-description="Description 02"
+        >
+          <div class="bb-card_thumbnail">
+            <img
+              src="assets/b-beirut/02_January22.jpg"
+              alt="B-Beirut January 22"
+            />
+            <div class="bb-card_play">&#9654;</div>
+          </div>
+          <div class="bb-card_info">
+            <h3>B-Beirut</h3>
+            <p>January 22, 2013</p>
+          </div>
+        </div>
+
+        <div
+          class="bb-card"
+          data-video="assets/b-beirut/03_February5_2013.mp4"
+          data-description="Description 03"
+        >
+          <div class="bb-card_thumbnail">
+            <img
+              src="assets/b-beirut/03_February5.jpg"
+              alt="B-Beirut February 5"
+            />
+            <div class="bb-card_play">&#9654;</div>
+          </div>
+          <div class="bb-card_info">
+            <h3>B-Beirut</h3>
+            <p>February 5, 2013</p>
+          </div>
+        </div>
+
+        <div
+          class="bb-card"
+          data-video="assets/b-beirut/04_February19_2013.mp4"
+          data-description="Description 04"
+        >
+          <div class="bb-card_thumbnail">
+            <img
+              src="assets/b-beirut/04_February19.jpg"
+              alt="B-Beirut February 19"
+            />
+            <div class="bb-card_play">&#9654;</div>
+          </div>
+          <div class="bb-card_info">
+            <h3>B-Beirut</h3>
+            <p>February 19, 2013</p>
+          </div>
+        </div>
+
+        <div
+          class="bb-card"
+          data-video="assets/b-beirut/05_March3_2013.mp4"
+          data-description="Description 05"
+        >
+          <div class="bb-card_thumbnail">
+            <img src="assets/b-beirut/05_March3.jpg" alt="B-Beirut March 3" />
+            <div class="bb-card_play">&#9654;</div>
+          </div>
+          <div class="bb-card_info">
+            <h3>B-Beirut</h3>
+            <p>March 3, 2013</p>
+          </div>
+        </div>
+
+        <div
+          class="bb-card"
+          data-video="assets/b-beirut/06_March26_2013.mp4"
+          data-description="Description 06"
+        >
+          <div class="bb-card_thumbnail">
+            <img src="assets/b-beirut/06_March26.jpg" alt="B-Beirut March 26" />
+            <div class="bb-card_play">&#9654;</div>
+          </div>
+          <div class="bb-card_info">
+            <h3>B-Beirut</h3>
+            <p>March 26, 2013</p>
+          </div>
+        </div>
+
+        <div
+          class="bb-card"
+          data-video="assets/b-beirut/07_March28_2013.mp4"
+          data-description="Description 07"
+        >
+          <div class="bb-card_thumbnail">
+            <img src="assets/b-beirut/07_March28.jpg" alt="B-Beirut March 28" />
+            <div class="bb-card_play">&#9654;</div>
+          </div>
+          <div class="bb-card_info">
+            <h3>B-Beirut</h3>
+            <p>March 28, 2013</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Video Overlay -->
+    <div class="video-overlay" id="video-overlay">
+      <button class="video-overlay_close" id="video-overlay-close">
+        &times;
+      </button>
+      <button class="video-overlay_prev" id="video-overlay-prev">
+        &#8592;
+      </button>
+      <div class="video-overlay_content">
+        <video
+          class="video-overlay_player"
+          id="video-overlay-player"
+          controls
+        ></video>
+        <p class="video-overlay_caption" id="video-overlay-caption"></p>
+      </div>
+      <button class="video-overlay_next" id="video-overlay-next">
+        &#8594;
+      </button>
+    </div>
+
     <script src="b-beirut.js"></script>
   </body>
 </html>
