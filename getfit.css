@@ -1,0 +1,147 @@
+/* ── Get Fit Section ── */
+.getfit-section {
+  background-color: black;
+  color: rgb(186, 186, 186);
+  padding: 4rem 2rem;
+  min-height: 100vh;
+}
+
+.getfit-title {
+  max-width: 1200px;
+  margin: 0 auto 2rem auto;
+}
+
+/* ── Grid ── */
+.getfit-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ── Card ── */
+.getfit-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.getfit-card_thumbnail {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.getfit-card_thumbnail img {
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  object-fit: cover;
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+.getfit-card:hover .getfit-card_thumbnail img {
+  opacity: 0.6;
+}
+
+.getfit-card_play {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.getfit-card:hover .getfit-card_play {
+  opacity: 1;
+}
+
+.getfit-card_info h3 {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: white;
+}
+
+.getfit-card_info p {
+  font-size: 0.8rem;
+  font-weight: 300;
+  opacity: 0.6;
+}
+
+/* ── Video Overlay ── */
+.video-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.96);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-overlay.active {
+  display: flex;
+}
+
+.video-overlay_player {
+  width: min(1200px, 95vw);
+  max-height: 90vh;
+  border-radius: 4px;
+}
+
+.video-overlay_close {
+  position: fixed;
+  top: 1rem;
+  right: 1.5rem;
+  background: none;
+  border: none;
+  color: rgb(186, 186, 186);
+  font-size: 2.5rem;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.video-overlay_close:hover {
+  color: white;
+}
+
+.video-overlay_prev,
+.video-overlay_next {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: rgb(186, 186, 186);
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  transition: color 0.2s ease;
+}
+
+.video-overlay_prev:hover,
+.video-overlay_next:hover {
+  color: white;
+}
+
+.video-overlay_prev {
+  left: 1.5rem;
+}
+
+.video-overlay_next {
+  right: 1.5rem;
+}
+
+/* ── Mobile ── */
+@media (max-width: 999px) {
+  .getfit-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
