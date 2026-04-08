@@ -1,6 +1,7 @@
 const images = Array.from(document.querySelectorAll(".gallery-grid img"));
 const lightbox = document.getElementById("lightbox");
 const lightboxImg = document.getElementById("lightbox-img");
+const lightboxCaption = document.getElementById("lightbox-caption");
 const closeBtn = document.getElementById("lightbox-close");
 const prevBtn = document.getElementById("lightbox-prev");
 const nextBtn = document.getElementById("lightbox-next");
@@ -11,6 +12,7 @@ function openLightbox(index) {
   currentIndex = index;
   lightboxImg.src = images[currentIndex].src;
   lightboxImg.alt = images[currentIndex].alt;
+  lightboxCaption.textContent = images[currentIndex].dataset.description || "";
   lightbox.classList.add("active");
 }
 
@@ -22,12 +24,14 @@ function showPrev() {
   currentIndex = (currentIndex - 1 + images.length) % images.length;
   lightboxImg.src = images[currentIndex].src;
   lightboxImg.alt = images[currentIndex].alt;
+  lightboxCaption.textContent = images[currentIndex].dataset.description || "";
 }
 
 function showNext() {
   currentIndex = (currentIndex + 1) % images.length;
   lightboxImg.src = images[currentIndex].src;
   lightboxImg.alt = images[currentIndex].alt;
+  lightboxCaption.textContent = images[currentIndex].dataset.description || "";
 }
 
 images.forEach((img, index) => {

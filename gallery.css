@@ -5,16 +5,21 @@
   padding: 4rem 2rem;
   min-height: 100vh;
 }
-
+.title-section {
+  background-color: rgb(26, 26, 26);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
 .gallery-title {
   max-width: 1200px;
-  margin: 0 auto 2rem auto;
+  margin: auto;
+  /* background-color: blue; */
 }
 
 /* ── Gallery Grid ── */
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 0.75rem;
   max-width: 1200px;
   margin: auto;
@@ -91,6 +96,22 @@
   right: 1.5rem;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.lightbox-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.lightbox-caption {
+  color: rgb(186, 186, 186);
+  font-size: 0.85rem;
+  font-style: italic;
+  text-align: center;
+  max-width: min(1200px, 95vw);
+  opacity: 0.85;
 }
 
 /* ── Mobile ── */
