@@ -22,6 +22,7 @@
         <div
           class="getfit-card"
           data-video="assets/getfit/01_GetFit_January21_2023.mp4"
+          data-description="Description 01"
         >
           <div class="getfit-card_thumbnail">
             <img
@@ -39,6 +40,7 @@
         <div
           class="getfit-card"
           data-video="assets/getfit/02_GetFit_18Mars_2023.mp4"
+          data-description="Description 02"
         >
           <div class="getfit-card_thumbnail">
             <img src="assets/getfit/02_March18.jpg" alt="Get Fit March 18" />
@@ -53,6 +55,7 @@
         <div
           class="getfit-card"
           data-video="assets/getfit/03_GetFit_April1_2023.mp4"
+          data-description="Description 03"
         >
           <div class="getfit-card_thumbnail">
             <img src="assets/getfit/03_April1.jpg" alt="Get Fit April 1" />
@@ -67,6 +70,7 @@
         <div
           class="getfit-card"
           data-video="assets/getfit/04_GetFit_April8_2023.mp4"
+          data-description="Description 04"
         >
           <div class="getfit-card_thumbnail">
             <img src="assets/getfit/04_April8.jpg" alt="Get Fit April 8" />
@@ -81,6 +85,7 @@
         <div
           class="getfit-card"
           data-video="assets/getfit/05_GetFit_April22_2023.mp4"
+          data-description="Description 05"
         >
           <div class="getfit-card_thumbnail">
             <img src="assets/getfit/05_April22.jpg" alt="Get Fit April 22" />
@@ -95,6 +100,7 @@
         <div
           class="getfit-card"
           data-video="assets/getfit/06_GetFit_April29_2023.mp4"
+          data-description="Description 06"
         >
           <div class="getfit-card_thumbnail">
             <img src="assets/getfit/06_April29.jpg" alt="Get Fit April 29" />
@@ -109,6 +115,7 @@
         <div
           class="getfit-card"
           data-video="assets/getfit/07_GetFit_May6_2023.mp4"
+          data-description="Description 07"
         >
           <div class="getfit-card_thumbnail">
             <img src="assets/getfit/07_May6.jpg" alt="Get Fit May 6" />
@@ -123,6 +130,7 @@
         <div
           class="getfit-card"
           data-video="assets/getfit/08_GetFit_May27_2023.mp4"
+          data-description="Description 08"
         >
           <div class="getfit-card_thumbnail">
             <img src="assets/getfit/08_May27.jpg" alt="Get Fit May 27" />
@@ -144,11 +152,14 @@
       <button class="video-overlay_prev" id="video-overlay-prev">
         &#8592;
       </button>
-      <video
-        class="video-overlay_player"
-        id="video-overlay-player"
-        controls
-      ></video>
+      <div class="video-overlay_content">
+        <video
+          class="video-overlay_player"
+          id="video-overlay-player"
+          controls
+        ></video>
+        <p class="video-overlay_caption" id="video-overlay-caption"></p>
+      </div>
       <button class="video-overlay_next" id="video-overlay-next">
         &#8594;
       </button>
