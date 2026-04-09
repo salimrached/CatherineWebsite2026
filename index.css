@@ -1,0 +1,113 @@
+.home-hero {
+  background-color: rgb(23, 23, 23);
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.home-hero_content {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  /* gap: 2rem; */
+}
+.home-hero_content img {
+  border-radius: 12px;
+  margin: auto;
+}
+.home-hero_content h1 {
+  font-size: 2.5rem;
+  font-weight: lighter;
+  margin-bottom: 2rem;
+}
+.quote {
+  font-style: italic;
+  color: rgb(122, 122, 122);
+  margin-top: 2rem;
+  font-size: 1.25rem;
+}
+
+/* Shortcuts Section */
+.home-shortcuts {
+  /* background-color: rgb(23, 23, 23); */
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.home-shortcuts_content {
+  max-width: 1200px;
+  margin: auto;
+}
+.home-shortcuts_content h1 {
+  /* font-size: 2rem; */
+  font-weight: lighter;
+  /* text-align: center; */
+  margin-bottom: 1.5rem;
+}
+.home-shortcuts_grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  /* max-width: 1200px; */
+  margin: auto;
+  /* padding-left: 1rem;
+  padding-right: 1rem; */
+}
+
+/* Shortcut Card*/
+.shortcut-card {
+  background-color: rgb(54, 54, 54);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(160, 160, 160);
+  border: 2px solid rgb(82, 82, 82);
+  text-decoration: none;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+.shortcut-card:hover {
+  transform: translateY(-6px);
+  border-color: rgb(221, 221, 221);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  color: rgb(220, 220, 220);
+}
+.shortcut-card img {
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+}
+.shortcut-card h2 {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+/* Announcements Section */
+.announcements {
+  background-color: rgb(23, 23, 23);
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.announcements-content {
+  max-width: 1200px;
+  margin: auto;
+}
+.announcements-content h1 {
+  font-weight: lighter;
+  margin-bottom: 1.5rem;
+}
+.announcement-grid {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.announcement-grid video {
+  aspect-ratio: 9 / 16;
+  flex: 1 1 0;
+  min-width: 0;
+  border-radius: 24px;
+  background-color: rgb(23, 23, 23);
+}

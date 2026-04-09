@@ -39,6 +39,22 @@
   border-radius: 12px;
 }
 
+@media (max-width: 1000px) {
+  .home-hero_content-1 {
+    flex-direction: column;
+  }
+
+  .home-hero_img {
+    width: 95%;
+    margin: auto;
+  }
+
+  .home-hero_img2 {
+    width: 95%;
+    margin: auto;
+  }
+}
+
 /* ── Home hero content 2 ── */
 .home-hero_content-2 {
   display: flex;
