@@ -8,3 +8,133 @@
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+
+/* ── Intown Section ── */
+.intown-section {
+  background-color: black;
+  color: rgb(186, 186, 186);
+  padding: 4rem 2rem;
+  min-height: 100vh;
+}
+
+.intown-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.intown-container h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* ── Intown Card ── */
+.intown-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  cursor: pointer;
+  /* max-width: 480px; */
+}
+
+.intown-card_thumbnail {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.intown-card_thumbnail img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+.intown-card:hover .intown-card_thumbnail img {
+  opacity: 0.6;
+}
+
+.intown-card_play {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.intown-card:hover .intown-card_play {
+  opacity: 1;
+}
+
+.intown-card_info h3 {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: white;
+}
+
+.intown-card_info p {
+  font-size: 0.8rem;
+  font-weight: 300;
+  opacity: 0.6;
+}
+
+/* ── Video Overlay ── */
+.video-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.96);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-overlay.active {
+  display: flex;
+}
+
+.video-overlay_player {
+  width: min(1200px, 95vw);
+  max-height: 90vh;
+  border-radius: 4px;
+}
+
+.video-overlay_close {
+  position: fixed;
+  top: 1rem;
+  right: 1.5rem;
+  background: none;
+  border: none;
+  color: rgb(186, 186, 186);
+  font-size: 2.5rem;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  z-index: 1001;
+}
+
+.video-overlay_close:hover {
+  color: white;
+}
+
+.video-overlay_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.video-overlay_caption {
+  color: rgb(186, 186, 186);
+  font-size: 0.85rem;
+  font-style: italic;
+  text-align: center;
+  max-width: min(1200px, 95vw);
+  opacity: 0.85;
+}

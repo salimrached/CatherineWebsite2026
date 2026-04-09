@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Catherine</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="base.css" />
     <link rel="stylesheet" href="about.css" />
   </head>
@@ -13,9 +19,45 @@
         <h1>🧘 About Catherine</h1>
       </div>
     </div>
-    <section class="intown-container">
-      <h2>Intown Interview</h2>
+
+    <section class="intown-section">
+      <div class="intown-container">
+        <!-- <h2>MTV Intown Interview</h2> -->
+        <div
+          class="intown-card"
+          data-video="assets/about/Catherine_Intown_Mtv.mp4"
+          data-description="Catherine Chidiac — Intown MTV Interview"
+        >
+          <div class="intown-card_thumbnail">
+            <img
+              src="assets/about/intown-cover.jpg"
+              alt="Catherine Chidiac Intown MTV Interview"
+            />
+            <div class="intown-card_play">&#9654;</div>
+          </div>
+          <div class="intown-card_info">
+            <h3>Intown</h3>
+            <p>MTV Lebanon</p>
+          </div>
+        </div>
+      </div>
     </section>
+
+    <!-- Video Overlay -->
+    <div class="video-overlay" id="video-overlay">
+      <button class="video-overlay_close" id="video-overlay-close">
+        &times;
+      </button>
+      <div class="video-overlay_content">
+        <video
+          class="video-overlay_player"
+          id="video-overlay-player"
+          controls
+        ></video>
+        <p class="video-overlay_caption" id="video-overlay-caption"></p>
+      </div>
+    </div>
+
     <script src="about.js"></script>
   </body>
 </html>
