@@ -1,0 +1,10 @@
+.about-title {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.title-section {
+  background-color: rgb(26, 26, 26);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
