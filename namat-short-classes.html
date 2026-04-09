@@ -14,6 +14,106 @@
     <link rel="stylesheet" href="namat-short-classes.css" />
   </head>
   <body>
+    <section class="namat-section">
+      <div class="namat-title">
+        <h1>🧘 Namat Short Classes</h1>
+      </div>
+      <div class="namat-grid">
+        <div
+          class="namat-card"
+          data-video="assets/namat-short-classes/3 Minutes Breathing Exercises with Catherine Chidiac_Namat Beirut.mp4"
+          data-description="Description 01"
+        >
+          <div class="namat-card_thumbnail">
+            <img
+              src="assets/namat-short-classes/3-Minutes-Breathing.jpg"
+              alt="3 Minutes Breathing Exercises"
+            />
+            <div class="namat-card_play">&#9654;</div>
+          </div>
+          <div class="namat-card_info">
+            <h3>3 Minutes Breathing Exercises</h3>
+            <p>Namat Beirut</p>
+          </div>
+        </div>
+
+        <div
+          class="namat-card"
+          data-video="assets/namat-short-classes/13 Minutes - Yoga For Allergies with Catherine Chidiac_Namat Beirut.mp4"
+          data-description="Description 02"
+        >
+          <div class="namat-card_thumbnail">
+            <img
+              src="assets/namat-short-classes/13-Minutes-Allergies.jpg"
+              alt="13 Minutes Yoga For Allergies"
+            />
+            <div class="namat-card_play">&#9654;</div>
+          </div>
+          <div class="namat-card_info">
+            <h3>13 Minutes - Yoga For Allergies</h3>
+            <p>Namat Beirut</p>
+          </div>
+        </div>
+
+        <div
+          class="namat-card"
+          data-video="assets/namat-short-classes/15 Minutes - Power Yoga Express with Catherine Chidiac_Namat Beirut.mp4"
+          data-description="Description 03"
+        >
+          <div class="namat-card_thumbnail">
+            <img
+              src="assets/namat-short-classes/15-Minutes-Power-Yoga-Express.jpg"
+              alt="15 Minutes Power Yoga Express"
+            />
+            <div class="namat-card_play">&#9654;</div>
+          </div>
+          <div class="namat-card_info">
+            <h3>15 Minutes - Power Yoga Express</h3>
+            <p>Namat Beirut</p>
+          </div>
+        </div>
+
+        <div
+          class="namat-card"
+          data-video="assets/namat-short-classes/15 Minutes - Yoga For Self Growth with Catherine Chidiac_Namat Beirut.mp4"
+          data-description="Description 04"
+        >
+          <div class="namat-card_thumbnail">
+            <img
+              src="assets/namat-short-classes/15-Minues-Yoga-Self-Growth.jpg"
+              alt="15 Minutes Yoga For Self Growth"
+            />
+            <div class="namat-card_play">&#9654;</div>
+          </div>
+          <div class="namat-card_info">
+            <h3>15 Minutes - Yoga For Self Growth</h3>
+            <p>Namat Beirut</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Video Overlay -->
+    <div class="video-overlay" id="video-overlay">
+      <button class="video-overlay_close" id="video-overlay-close">
+        &times;
+      </button>
+      <button class="video-overlay_prev" id="video-overlay-prev">
+        &#8592;
+      </button>
+      <div class="video-overlay_content">
+        <video
+          class="video-overlay_player"
+          id="video-overlay-player"
+          controls
+        ></video>
+        <p class="video-overlay_caption" id="video-overlay-caption"></p>
+      </div>
+      <button class="video-overlay_next" id="video-overlay-next">
+        &#8594;
+      </button>
+    </div>
+
     <script src="namat-short-classes.js"></script>
   </body>
 </html>
