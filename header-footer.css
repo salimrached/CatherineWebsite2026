@@ -42,6 +42,69 @@ nav a.active {
   padding-bottom: 2px;
 }
 
+/* ── Footer ── */
+footer {
+  background-color: rgb(10, 10, 10);
+  border-top: 1px solid rgb(45, 45, 45);
+}
+
+.footer-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 2.5rem;
+  border-bottom: 1px solid rgb(30, 30, 30);
+}
+
+.footer-nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: rgb(150, 150, 150);
+  transition: color 0.25s ease;
+}
+
+.footer-nav a:hover {
+  color: rgb(220, 220, 220);
+}
+
+.footer-nav a.active {
+  color: rgb(240, 240, 240);
+  border-bottom: 1px solid rgba(200, 200, 200, 0.45);
+  padding-bottom: 2px;
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1.25rem 2.5rem;
+}
+
+.footer-socials a {
+  color: rgb(150, 150, 150);
+  font-size: 1.25rem;
+  text-decoration: none;
+  transition:
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.footer-socials a:hover {
+  color: rgb(220, 220, 220);
+  transform: translateY(-3px);
+}
+
 /* ── Burger button (hidden on desktop) ── */
 .burger {
   display: none;
