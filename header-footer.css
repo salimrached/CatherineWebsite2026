@@ -1,0 +1,36 @@
+/* ── Header ── */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: rgb(10, 10, 10);
+  border-bottom: 1px solid rgb(45, 45, 45);
+  padding: 0 2.5rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  height: 4rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgb(150, 150, 150);
+  transition: color 0.25s ease;
+}
+
+nav a:hover {
+  color: rgb(220, 220, 220);
+}
