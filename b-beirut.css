@@ -2,15 +2,19 @@
 .bb-section {
   background-color: black;
   color: rgb(186, 186, 186);
-  padding: 4rem 2rem;
+  /* padding: 4rem 2rem; */
   min-height: 100vh;
 }
 
 .bb-title {
   max-width: 1200px;
-  margin: 0 auto 2rem auto;
+  margin: auto;
 }
-
+.bb-title-container {
+  background-color: rgb(26, 26, 26);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
 /* ── Grid ── */
 .bb-grid {
   display: grid;
@@ -18,6 +22,8 @@
   gap: 1.5rem;
   max-width: 1200px;
   margin: auto;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 /* ── Card ── */
