@@ -88,7 +88,7 @@ footer {
   display: flex;
   justify-content: center;
   gap: 2rem;
-  padding: 0.5rem 2.5rem 0.5rem;
+  padding: 0.5rem 2.5rem;
 }
 
 .footer-socials a {
@@ -126,7 +126,7 @@ footer {
 
 /* ── Mobile nav ── */
 @media (max-width: 1000px) {
-  nav {
+  header nav {
     justify-content: space-between;
   }
 
@@ -134,7 +134,7 @@ footer {
     display: block;
   }
 
-  nav ul {
+  header nav ul {
     display: none;
     flex-direction: column;
     gap: 0;
@@ -148,16 +148,16 @@ footer {
     z-index: 99;
   }
 
-  nav ul.open {
+  header nav ul.open {
     display: flex;
   }
 
-  nav ul li {
+  header nav ul li {
     width: 100%;
     text-align: center;
   }
 
-  nav ul li a {
+  header nav ul li a {
     display: block;
     padding: 0.75rem 1rem;
   }
