@@ -88,7 +88,7 @@ footer {
   display: flex;
   justify-content: center;
   gap: 2rem;
-  padding: 1.25rem 2.5rem;
+  padding: 0.5rem 2.5rem 0.5rem;
 }
 
 .footer-socials a {
@@ -103,6 +103,13 @@ footer {
 .footer-socials a:hover {
   color: rgb(220, 220, 220);
   transform: translateY(-3px);
+}
+
+.footer-copyright {
+  text-align: center;
+  font-size: 0.7rem;
+  color: rgb(80, 80, 80);
+  padding: 1rem 2.5rem 1.5rem;
 }
 
 /* ── Burger button (hidden on desktop) ── */
