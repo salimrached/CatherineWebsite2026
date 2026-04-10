@@ -14,6 +14,10 @@
     <link rel="stylesheet" href="base.css" />
     <link rel="stylesheet" href="header-footer.css" />
     <link rel="stylesheet" href="contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
   </head>
   <body>
     <header>
@@ -30,5 +34,70 @@
         </ul>
       </nav>
     </header>
+    <section class="contact-title-section">
+      <div class="contact-title">
+        <h1>📨 Connect With Me</h1>
+      </div>
+    </section>
+    <section class="contact-ways-section">
+      <div class="contact-ways-container">
+        <div class="card-email">
+          <h2>Send me an Email</h2>
+          <div class="card-email-content" id="copy-email">
+            <p>catherinechidiac@gmail.com</p>
+          </div>
+        </div>
+        <div class="card-namat">
+          <h2>Call Namat Beirut</h2>
+          <a class="card-namat-content" href="tel:+9613922953">
+            <p>+961 3 922 953</p>
+          </a>
+          <small>Available for calls weekdays 9AM - 6PM</small>
+        </div>
+        <div class="socials">
+          <h2>Follow & Connect</h2>
+          <a
+            class="socials-card insta"
+            href="https://www.instagram.com/catherinechidiac/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-brands fa-instagram"></i>
+            <span>Instagram</span>
+          </a>
+          <a
+            class="socials-card facebook"
+            href="https://www.facebook.com/namatbeirut/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-brands fa-facebook"></i>
+            <span>Facebook</span>
+          </a>
+          <a
+            class="socials-card youtube"
+            href="https://www.youtube.com/@catherinechidiac1"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-brands fa-youtube"></i>
+            <span>Youtube</span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <div class="copy-toast" id="copy-toast">
+      Email address copied to clipboard
+    </div>
+
+    <script>
+      document.getElementById("copy-email").addEventListener("click", () => {
+        navigator.clipboard.writeText("catherinechidiac@gmail.com").then(() => {
+          const toast = document.getElementById("copy-toast");
+          toast.classList.add("show");
+          setTimeout(() => toast.classList.remove("show"), 2500);
+        });
+      });
+    </script>
   </body>
 </html>

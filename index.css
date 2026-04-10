@@ -61,7 +61,7 @@
   border-radius: 12px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   color: rgb(160, 160, 160);
   border: 2px solid rgb(82, 82, 82);
   text-decoration: none;
@@ -110,4 +110,23 @@
   min-width: 0;
   border-radius: 24px;
   background-color: rgb(23, 23, 23);
+}
+/* Media Queries */
+@media (max-width: 1000px) {
+  .home-shortcuts_content {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+  }
+  .home-shortcuts_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .announcements-content {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+  }
+  .announcement-grid video {
+    flex: 1 1 100%;
+  }
 }
