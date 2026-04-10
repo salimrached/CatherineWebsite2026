@@ -172,3 +172,40 @@
 .copy-toast.show {
   opacity: 1;
 }
+
+@media (max-width: 1000px) {
+  .contact-title {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+  }
+
+  .contact-ways-container {
+    padding: 2rem 1rem;
+  }
+
+  .card-email,
+  .card-namat {
+    padding: 0.5rem;
+  }
+
+  .card-email h2,
+  .card-namat h2,
+  .socials h2 {
+    text-align: center;
+  }
+
+  .card-email-content,
+  .card-namat-content {
+    padding: 2rem 1.5rem;
+    text-align: center;
+  }
+
+  .card-namat small {
+    align-self: center;
+  }
+
+  .socials {
+    padding: 0.5rem;
+  }
+}

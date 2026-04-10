@@ -41,3 +41,54 @@ nav a.active {
   border-bottom: 1px solid rgba(200, 200, 200, 0.45);
   padding-bottom: 2px;
 }
+
+/* ── Burger button (hidden on desktop) ── */
+.burger {
+  display: none;
+  background: none;
+  border: none;
+  color: rgb(200, 200, 200);
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  line-height: 1;
+}
+
+/* ── Mobile nav ── */
+@media (max-width: 1000px) {
+  nav {
+    justify-content: space-between;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    right: 0;
+    background-color: rgb(10, 10, 10);
+    border-bottom: 1px solid rgb(45, 45, 45);
+    padding: 1rem 0;
+    z-index: 99;
+  }
+
+  nav ul.open {
+    display: flex;
+  }
+
+  nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+
+  nav ul li a {
+    display: block;
+    padding: 0.75rem 1rem;
+  }
+}
